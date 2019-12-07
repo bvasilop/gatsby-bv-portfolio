@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import navArray from "../../shared/navigationArray";
-import colors from '../../shared/colors';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { animated } from 'react-spring';
+import navArray from '../../shared/navigationArray';
+import colors from '../../shared/colors';
 import breakpoints from '../../shared/breakpoints';
 import logo from '../../images/logo.svg';
-import { animated } from 'react-spring';
 
 const NavDrawer = ({ toggleNav, animation }) => (
   <Drawer

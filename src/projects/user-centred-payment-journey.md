@@ -14,7 +14,7 @@ outline: >-
   deliverable for this project was a fully interactive code prototype.
 content:
   - copy: >-
-      Before begining the project we mapped out current and prospective journeys
+      Before beginning the project we mapped out current and prospective journeys
       by conducting in depth user research of both the RAC and competitor
       payment journeys.
     image: /img/rac-user-flows.jpg

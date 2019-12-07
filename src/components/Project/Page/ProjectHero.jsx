@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { animated } from 'react-spring';
 import Img from 'gatsby-image';
-import breakpoints from "../../../shared/breakpoints";
-import colors from "../../../shared/colors";
+import breakpoints from '../../../shared/breakpoints';
+import colors from '../../../shared/colors';
 import { animations } from '../../../shared/transitions';
 
 const ProjectHero = ({ client, title, color, image }) => (
