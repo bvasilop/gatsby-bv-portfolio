@@ -1,13 +1,17 @@
 ---
 date: 2019-10-02T20:58:00.000Z
-client: client
-title: title
+client: Osborne Clarke
+title: Pattern library
 slug: /osborne-clarke
-link: "https://iliosgarden.com"
+link: "https://billvas.com"
 color: "#043144"
 featuredimage: /img/osborne-clarke-cover-image.png
 outline: >-
-content
+  Designed, curated and implemented a pattern library for Osborne Clarke. Their
+  websites function is to serve insightful content to prospective clients.
+  Therefore the focus of my work was creating a robust, responsive typography
+  scale and designing interactive, animated components that allow users to
+  browse top level information whilst browsing the site.
 content:
   - image: /img/osborne-clarke-responsive.jpg
     layout: left

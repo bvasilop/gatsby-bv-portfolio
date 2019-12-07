@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Robert Squires`,
+    title: `Bill Vasilopoulos`,
     description: `My portfolio site.`,
-    author: `@robtf9`,
-    siteUrl: `https://robertsquires.netlify.com/`,
+    author: `@bvasilop`,
+    siteUrl: `https://www.netlify.com/`,
   },
   plugins: [
     {
@@ -39,7 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `robert-squires-portfolio`,
+        name: `bill-vasilopoulos-portfolio`,
         short_name: `portfolio`,
         start_url: `/`,
         background_color: `#222222`,

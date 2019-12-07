@@ -1,26 +1,32 @@
 ---
 date: 2019-10-01T20:51:00.000Z
-client: First Client
-title: Web Developer
+client: Project 1
+title: Parametric search
 slug: /panasonic-parametric-search
 link: >-
-  https://iliosgarden.com
+  https://www.billvas.com
 color: "#EF5F50"
 featuredimage: /img/parametric-cover-image.png
 outline: >-
-This freelance website was created for a retail garden supply client utilizing Wordpress and Woocommerce to facilitate browsing and purchasing of a broad catalog of horticulture products and equipment. Using extensive CSS to create unique styling for the site as well as utilizing Wordpress plugins such as, Google Analytics, Akismet, WP SuperCache, Ninja Forms, WooCommerce, Storefront Product Sharing, WP All Import, Storefront Product Sharing and Search Engine Visibility to allow users to browse, purchase and checkout with a unique consumer user experience.
+  Parametric searches are typically a mess of cluttered interface components and
+  unreadable data. I designed, user tested and prototyped a fully reponsive
+  solution for Panasonic America that strips away the complexity and provides
+  users with an easy way to configure and refine the parameters of their search.
 content:
-  - copy: An example of a retail e-commerce website
+  - copy: An example of how cluttered parametric searches can be.
     image: /img/parametric-examples.jpg
     layout: left
     title: Overcrowded
   - copy: >-
-          more stuff
+      As we already had an established design system I iteratively prototyped my
+      ideas with wireframes to get faster feedback from users, the dev team and
+      the client.
     image: /img/parametric-wireframe.jpg
     layout: right
     title: Wireframing
   - copy: >-
-          more stuff
+      Very few exsisting parametric searches are responsive. My solution works
+      seemlessly across all devices.
     image: /img/parametric-ui.jpg
     layout: left
     title: Responsive

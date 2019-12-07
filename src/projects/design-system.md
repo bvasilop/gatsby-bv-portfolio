@@ -3,8 +3,8 @@ date: 2019-10-06T20:59:00.000Z
 client: Panasonic
 title: Design system
 slug: /design-system
-link: '10/07/2019 9:59 PM'
-color: '#0062af'
+link: "https://billvas.com"
+color: "#0062af"
 featuredimage: /img/panasonic-cover-image.png
 outline: >-
   PIDSA (Panasonic Industrial Devices Sales Company Of America) had an outdated,
@@ -24,4 +24,3 @@ content:
   - image: /img/panasonic-tablets.jpg
     layout: left
 ---
-

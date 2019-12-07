@@ -9,7 +9,7 @@ import {
 const ProjectContent = ({ color, client, content }) => {
   return (
     <ProjectContentContainer color={color} client={client}>
-      {content.map(({ image, title, copy, layout, video }) => {
+      {content.map(({ image, title, copy, layout, video}) => {
         if (layout === "left") {
           return (
             <LeftContentBlock
@@ -20,6 +20,7 @@ const ProjectContent = ({ color, client, content }) => {
               video={video}
               client={client}
               color={color}
+              // key={id}
             />
           );
         } else if (layout === "right") {

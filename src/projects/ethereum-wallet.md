@@ -1,13 +1,17 @@
 ---
 date: 2019-10-05T09:18:00.000Z
-client: client
-title: title
+client: MyEthvault
+title: Ethereum wallet
 slug: /ethereum-wallet
-link: "https://iliosgarden.com/"
+link: "https://billvas.com"
 color: "#DAEBF1"
 featuredimage: /img/ethvault-cover-image.png
 outline: >-
-content
+  MyEthvault is an open source application that allows users to interact with
+  dApps on the Ethereum blockchain without leaving the browser. Currently in the
+  prototype phase, my role has been to develop a brand aesthetic as well as
+  working on the front-end React application. This app is a first of its kind which
+  means a blank canvas when it comes to designing experience and interface patterns.
 content:
   - copy: ""
     image: /img/ethvault-landing-page.jpg
