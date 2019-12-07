@@ -1,45 +1,43 @@
-import React from "react";
-import styled from "styled-components";
-import colors from "../../shared/colors";
-import { transitions } from "../../shared/transitions";
-import breakpoints from "../../shared/breakpoints";
+import React from 'react';
+import styled from 'styled-components';
+import colors from '../../shared/colors';
+import { transitions } from '../../shared/transitions';
+import breakpoints from '../../shared/breakpoints';
 
-const ContactForm = ({ name }) => {
-  return (
-    <form
-      name={name}
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      action="/"
-    >
-      <input type="hidden" name="bot-field" />
-      <input type="hidden" name="form-name" value={name} />
-      <Input>
-        <label>
-          <p>Your name</p>
-        </label>
-        <input type="text" name="name" required />
-      </Input>
-      <Input>
-        <label>
-          <p>Your email</p>
-        </label>
-        <input type="email" name="email" required />
-      </Input>
-      <Input>
-        <label>
-          <p>Message</p>
-        </label>
-        <textarea name="message" required />
-      </Input>
-      <Button type="submit">
-        <p>Send</p>
-        <ButtonSpan />
-      </Button>
-    </form>
-  );
-};
+const ContactForm = ({ name }) => (
+  <form
+    name={name}
+    method="POST"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    action="/"
+  >
+    <input type="hidden" name="bot-field" />
+    <input type="hidden" name="form-name" value={name} />
+    <Input>
+      <label>
+        <p>Your name</p>
+      </label>
+      <input type="text" name="name" required />
+    </Input>
+    <Input>
+      <label>
+        <p>Your email</p>
+      </label>
+      <input type="email" name="email" required />
+    </Input>
+    <Input>
+      <label>
+        <p>Message</p>
+      </label>
+      <textarea name="message" required />
+    </Input>
+    <Button type="submit">
+      <p>Send</p>
+      <ButtonSpan />
+    </Button>
+  </form>
+);
 
 export default ContactForm;
 

@@ -1,19 +1,17 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { Link } from "gatsby";
-import colors from "../../shared/colors";
-import breakpoints from "../../shared/breakpoints";
-import { FaArrowRight } from "react-icons/fa";
-import { transitions } from "../../shared/transitions";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+import { FaArrowRight } from 'react-icons/fa';
+import colors from '../../shared/colors';
+import breakpoints from '../../shared/breakpoints';
+import { transitions } from '../../shared/transitions';
 
-const TextLink = ({ text, to }) => {
-  return (
-    <StyledLink to={to}>
-      {text} <FaArrowRight />
-    </StyledLink>
-  );
-};
+const TextLink = ({ text, to }) => (
+  <StyledLink to={to}>
+    {text} <FaArrowRight />
+  </StyledLink>
+);
 
 const StyledLink = styled(Link)`
   position: relative;

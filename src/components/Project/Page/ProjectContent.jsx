@@ -1,59 +1,58 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 import {
   LeftContentBlock,
   RightContentBlock,
   MiddleContentBlock,
-} from "./ContentBlocks";
+} from './ContentBlocks';
 
-const ProjectContent = ({ color, client, content }) => {
-  return (
-    <ProjectContentContainer color={color} client={client}>
-      {content.map(({ image, title, copy, layout, video}) => {
-        if (layout === "left") {
-          return (
-            <LeftContentBlock
-              image={image}
-              title={title}
-              copy={copy}
-              layout={layout}
-              video={video}
-              client={client}
-              color={color}
-              // key={id}
-            />
-          );
-        } else if (layout === "right") {
-          return (
-            <RightContentBlock
-              image={image}
-              title={title}
-              copy={copy}
-              layout={layout}
-              video={video}
-              client={client}
-              color={color}
-            />
-          );
-        } else if (layout === "middle") {
-          return (
-            <MiddleContentBlock
-              image={image}
-              title={title}
-              copy={copy}
-              layout={layout}
-              video={video}
-              client={client}
-              color={color}
-            />
-          );
-        } else {
-          return null;
-        }
-      })}
-    </ProjectContentContainer>
-  );
-};
+const ProjectContent = ({ color, client, content }) => (
+  <ProjectContentContainer color={color} client={client}>
+    {content.map(({ image, title, copy, layout, video }) => {
+      if (layout === 'left') {
+        return (
+          <LeftContentBlock
+            image={image}
+            title={title}
+            copy={copy}
+            layout={layout}
+            video={video}
+            client={client}
+            color={color}
+            // key={id}
+          />
+        );
+      }
+      if (layout === 'right') {
+        return (
+          <RightContentBlock
+            image={image}
+            title={title}
+            copy={copy}
+            layout={layout}
+            video={video}
+            client={client}
+            color={color}
+          />
+        );
+      }
+      if (layout === 'middle') {
+        return (
+          <MiddleContentBlock
+            image={image}
+            title={title}
+            copy={copy}
+            layout={layout}
+            video={video}
+            client={client}
+            color={color}
+          />
+        );
+      }
+      return null;
+    })}
+  </ProjectContentContainer>
+);
 
 const ProjectContentContainer = styled.div`
   position: relative;

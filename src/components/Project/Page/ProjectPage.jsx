@@ -1,12 +1,12 @@
-import React from "react";
-import { graphql } from "gatsby";
-import SEO from "../../Layout/SEO";
-import ProjectHero from "./ProjectHero";
-import ProjectIntro from "./ProjectIntro";
-import ProjectContent from "./ProjectContent";
-import ContactForm from "../../Contact/ContactForm";
-import ContactCard from "../../Contact/ContactCard";
-import { ContactContainer } from "../../Common/Container";
+import React from 'react';
+import { graphql } from 'gatsby';
+import SEO from '../../Layout/SEO';
+import ProjectHero from './ProjectHero';
+import ProjectIntro from './ProjectIntro';
+import ProjectContent from './ProjectContent';
+import ContactForm from '../../Contact/ContactForm';
+import ContactCard from '../../Contact/ContactCard';
+import { ContactContainer } from '../../Common/Container';
 
 const postLayout = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
@@ -62,7 +62,6 @@ export const query = graphql`
           }
         }
         content {
-
           title
           copy
           layout

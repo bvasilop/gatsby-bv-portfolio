@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
-import breakpoints from "../../shared/breakpoints";
-import { transitions } from "../../shared/transitions";
-import colors from "../../shared/colors";
+import styled from 'styled-components';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import breakpoints from '../../shared/breakpoints';
+import { transitions } from '../../shared/transitions';
+import colors from '../../shared/colors';
 
 export const Card = styled(AniLink)`
   position: relative;
@@ -49,16 +49,15 @@ export const Copy = styled.div`
     font-size: 1.8rem;
   }
 
-  color: ${({ client }) =>
-    client === "CLient 1" ? `#02394A` : colors.white};
+  color: ${({ client }) => (client === 'CLient 1' ? `#02394A` : colors.white)};
 
   ${breakpoints.desktop} {
     padding: 4rem;
     top: auto;
     bottom: ${({ client }) =>
-      client === "Client 1" ||
-      client === "Client name" ||
-      client === "Client title"
+      client === 'Client 1' ||
+      client === 'Client name' ||
+      client === 'Client title'
         ? `auto`
         : `0`};
 
@@ -85,7 +84,7 @@ export const ImageWrapper = styled.div`
   transform: scale(1);
   ${transitions.satanSnap};
   transform-origin: ${({ client }) =>
-    client === "Osborne Clarke" ? `50% 100%` : `50%`};
+    client === 'Osborne Clarke' ? `50% 100%` : `50%`};
 
   ${Card}:hover & {
     transform: scale(1.1);
@@ -114,16 +113,16 @@ export const Button = styled.button`
   ${breakpoints.desktop} {
     right: 4rem;
     bottom: ${({ client }) =>
-      client === "MyEthvault" ||
-      client === "Osborne Clarke" ||
-      client === "MaiBee"
+      client === 'MyEthvault' ||
+      client === 'Osborne Clarke' ||
+      client === 'MaiBee'
         ? `0`
         : `auto`};
 
     transform: ${({ client }) =>
-      client === "MyEthvault" ||
-      client === "Osborne Clarke" ||
-      client === "MaiBee"
+      client === 'MyEthvault' ||
+      client === 'Osborne Clarke' ||
+      client === 'MaiBee'
         ? `translateY(6rem)`
         : `translateY(-6rem)`};
   }

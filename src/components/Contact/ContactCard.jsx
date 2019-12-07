@@ -1,23 +1,21 @@
-import React from "react";
-import styled from "styled-components";
-import colors from "../../shared/colors";
-import { FaLink } from "react-icons/fa";
+import React from 'react';
+import styled from 'styled-components';
+import { FaLink } from 'react-icons/fa';
+import colors from '../../shared/colors';
 
-const ContactCard = ({ title, copy, link }) => {
-  return (
-    <Card>
-      <h1>{title}</h1>
-      <p>{copy}</p>
-      {link ? (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          View the project <FaLink />
-        </a>
-      ) : (
-        <a href="tel:773-571-3820">(773) 571-3820</a>
-      )}
-    </Card>
-  );
-};
+const ContactCard = ({ title, copy, link }) => (
+  <Card>
+    <h1>{title}</h1>
+    <p>{copy}</p>
+    {link ? (
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        View the project <FaLink />
+      </a>
+    ) : (
+      <a href="tel:773-571-3820">(773) 571-3820</a>
+    )}
+  </Card>
+);
 
 const Card = styled.div`
   margin-bottom: 5rem;

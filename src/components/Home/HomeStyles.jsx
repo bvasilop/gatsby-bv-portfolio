@@ -1,7 +1,7 @@
-import { animated } from "react-spring";
-import Container from "../Common/Container";
-import styled from "styled-components";
-import breakpoints from "../../shared/breakpoints";
+import { animated } from 'react-spring';
+import styled from 'styled-components';
+import Container from '../Common/Container';
+import breakpoints from '../../shared/breakpoints';
 
 export const HomeContainer = styled(Container)`
   position: relative;

@@ -1,6 +1,6 @@
-const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
-const { fmImagesToRelative } = require("gatsby-remark-relative-images");
+const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem');
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -24,7 +24,7 @@ exports.createPages = ({ graphql, actions }) => {
         createPage({
           path: `/projects${node.frontmatter.slug}`,
           component: path.resolve(
-            "./src/components/Project/Page/ProjectPage.jsx"
+            './src/components/Project/Page/ProjectPage.jsx'
           ),
           context: {
             slug: node.frontmatter.slug,

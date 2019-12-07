@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import colors from "../../shared/colors";
-import { transitions } from "../../shared/transitions";
-import breakpoints from "../../shared/breakpoints";
-import { animated } from "react-spring";
+import styled from 'styled-components';
+import { animated } from 'react-spring';
+import colors from '../../shared/colors';
+import { transitions } from '../../shared/transitions';
+import breakpoints from '../../shared/breakpoints';
 
 export const Container = styled.nav`
   z-index: 1100;

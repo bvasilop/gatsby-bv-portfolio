@@ -1,10 +1,10 @@
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import styled from "styled-components";
-import ProjectCard from "./ProjectCard";
-import { animations } from "../../shared/transitions";
-import Container from "../Common/Container";
-import breakpoints from "../../shared/breakpoints";
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import styled from 'styled-components';
+import ProjectCard from './ProjectCard';
+import { animations } from '../../shared/transitions';
+import Container from '../Common/Container';
+import breakpoints from '../../shared/breakpoints';
 
 const ProjectList = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`

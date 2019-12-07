@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import breakpoints from "../../shared/breakpoints";
-import { animated } from "react-spring";
-import colors from "../../shared/colors";
+import styled from 'styled-components';
+import { animated } from 'react-spring';
+import breakpoints from '../../shared/breakpoints';
+import colors from '../../shared/colors';
 
 const Container = styled(animated.div)`
   position: relative;
@@ -45,7 +45,7 @@ export const ContactContainer = styled.div`
   grid-column: 1 / -1;
   background-color: ${({ color }) => color};
   color: ${({ client }) =>
-    client === "MyEthvault" ? `#02394A` : colors.white};
+    client === 'MyEthvault' ? `#02394A` : colors.white};
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   padding: calc(100vh / 6) 0;
@@ -77,13 +77,13 @@ export const ContactContainer = styled.div`
     input,
     textarea {
       border: ${({ client }) =>
-        client === "MyEthvault" ? `0.1rem solid #02394A` : null};
+        client === 'MyEthvault' ? `0.1rem solid #02394A` : null};
     }
   }
 
   a {
     color: ${({ client }) =>
-      client === "MyEthvault" ? `#02394A` : colors.white} !important;
+      client === 'MyEthvault' ? `#02394A` : colors.white} !important;
   }
 
   label {
@@ -95,7 +95,7 @@ export const ContactContainer = styled.div`
   button {
     color: ${({ color }) => color};
     background-color: ${({ client }) =>
-      client === "MyEthvault" ? `#02394A` : colors.white};
+      client === 'MyEthvault' ? `#02394A` : colors.white};
   }
 `;
 

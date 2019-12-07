@@ -1,42 +1,35 @@
-import React from "react";
-import styled from "styled-components";
-import breakpoints from "../../../shared/breakpoints";
-import { transitions } from "../../../shared/transitions";
-import Img from "gatsby-image";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
-import colors from "../../../shared/colors";
+import React from 'react';
+import styled from 'styled-components';
+import Img from 'gatsby-image';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import breakpoints from '../../../shared/breakpoints';
+import { transitions } from '../../../shared/transitions';
+import colors from '../../../shared/colors';
 
-const OtherProjects = ({ projects }) => {
-  return (
-    <>
-      <OtherProjectList>
-        {projects.map(({ node }) => {
-          return (
-            <AniLink
-              key={node.frontmatter.slug}
-              to={`/projects${node.frontmatter.slug}`}
-              aria-label={`Read more about ${node.frontmatter.title}`}
-              cover
-              bg={node.frontmatter.color}
-              direction="right"
-            >
-              <Card
-                client={node.frontmatter.client}
-                color={node.frontmatter.color}
-              >
-                <p>{node.frontmatter.client}</p>
-                <h4>{node.frontmatter.title}</h4>
-                <Image
-                  fluid={node.frontmatter.featuredimage.childImageSharp.fluid}
-                />
-              </Card>
-            </AniLink>
-          );
-        })}
-      </OtherProjectList>
-    </>
-  );
-};
+const OtherProjects = ({ projects }) => (
+  <>
+    <OtherProjectList>
+      {projects.map(({ node }) => (
+        <AniLink
+          key={node.frontmatter.slug}
+          to={`/projects${node.frontmatter.slug}`}
+          aria-label={`Read more about ${node.frontmatter.title}`}
+          cover
+          bg={node.frontmatter.color}
+          direction="right"
+        >
+          <Card client={node.frontmatter.client} color={node.frontmatter.color}>
+            <p>{node.frontmatter.client}</p>
+            <h4>{node.frontmatter.title}</h4>
+            <Image
+              fluid={node.frontmatter.featuredimage.childImageSharp.fluid}
+            />
+          </Card>
+        </AniLink>
+      ))}
+    </OtherProjectList>
+  </>
+);
 
 export default OtherProjects;
 
@@ -57,7 +50,7 @@ const Card = styled.div`
   cursor: pointer;
   background-color: ${({ color }) => color};
   color: ${({ client }) =>
-    client === "MyEthvault" ? `#02394A` : colors.white};
+    client === 'MyEthvault' ? `#02394A` : colors.white};
   padding: 2rem;
   padding-bottom: 4rem;
   transform: translateY(0rem);

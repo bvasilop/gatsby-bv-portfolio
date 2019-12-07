@@ -1,11 +1,11 @@
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import { ContentContainer } from "../Common/Container";
-import ExperienceCard from "./ExperienceCard";
-import { animations } from "../../shared/transitions";
-import { FaFilePdf } from "react-icons/fa";
-import styled from "styled-components";
-import colors from "../../shared/colors";
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import { FaFilePdf } from 'react-icons/fa';
+import styled from 'styled-components';
+import { ContentContainer } from '../Common/Container';
+import ExperienceCard from './ExperienceCard';
+import { animations } from '../../shared/transitions';
+import colors from '../../shared/colors';
 
 const ExperienceList = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
@@ -34,12 +34,8 @@ const ExperienceList = () => {
     <ContentContainer style={animations.verticleSlide(`15rem`, 0)}>
       <Card>
         <h1>Experience</h1>
-        <p>Download a copy of my CV below.</p>{" "}
-        <a
-          href="https://billvas.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <p>Download a copy of my CV below.</p>{' '}
+        <a href="https://billvas.com" target="_blank" rel="noopener noreferrer">
           Download CV <FaFilePdf />
         </a>
       </Card>

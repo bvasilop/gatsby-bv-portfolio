@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { Link } from "gatsby";
-import colors from "../../shared/colors";
-import { transitions } from "../../shared/transitions";
+import React, { useRef } from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+import colors from '../../shared/colors';
+import { transitions } from '../../shared/transitions';
 
 const NavLink = ({ text, to, mouseOver }) => {
   const wrapperRef = useRef(null);

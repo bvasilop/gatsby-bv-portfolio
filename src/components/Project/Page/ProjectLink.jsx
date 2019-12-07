@@ -1,19 +1,17 @@
-import React from "react";
-import styled from "styled-components";
-import { ContentContainer } from "../../Common/Container";
-import colors from "../../../shared/colors";
-import breakpoints from "../../../shared/breakpoints";
+import React from 'react';
+import styled from 'styled-components';
+import { ContentContainer } from '../../Common/Container';
+import colors from '../../../shared/colors';
+import breakpoints from '../../../shared/breakpoints';
 
-const ProjectLink = ({ color, image, link }) => {
-  return (
-    <LinkContainer color={color}>
-      <h2>Want to know more?</h2>
-      <ExternalButton target="_blank" href={link}>
-        View the project
-      </ExternalButton>
-    </LinkContainer>
-  );
-};
+const ProjectLink = ({ color, image, link }) => (
+  <LinkContainer color={color}>
+    <h2>Want to know more?</h2>
+    <ExternalButton target="_blank" href={link}>
+      View the project
+    </ExternalButton>
+  </LinkContainer>
+);
 
 const LinkContainer = styled(ContentContainer)`
   position: relative;

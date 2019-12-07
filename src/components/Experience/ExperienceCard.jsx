@@ -1,16 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import colors from "../../shared/colors";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import colors from '../../shared/colors';
 
 const ExperienceCard = ({ experience }) => {
-  const from = experience.from.split(" ").join("/");
-  const to = experience.to.split(" ").join("/");
+  const from = experience.from.split(' ').join('/');
+  const to = experience.to.split(' ').join('/');
   return (
     <Card>
       <Company>{experience.title}</Company>
       <Date>
-        {from} - {!experience.current ? to : "Present"}
+        {from} - {!experience.current ? to : 'Present'}
       </Date>
       <p>{experience.description}</p>
     </Card>

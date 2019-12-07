@@ -1,31 +1,31 @@
-import React, { useState, useEffect } from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
-import { HomeContainer, Text, Image } from "./HomeStyles";
-import TextLink from "../Common/TextLink";
-import { animations } from "../../shared/transitions";
+import React, { useState, useEffect } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import { HomeContainer, Text, Image } from './HomeStyles';
+import TextLink from '../Common/TextLink';
+import { animations } from '../../shared/transitions';
 
 const Home = () => {
-  const windowScope = typeof window !== "undefined" && window;
+  const windowScope = typeof window !== 'undefined' && window;
   const [height, setHeight] = useState();
 
   useEffect(() => {
     setHeight(windowScope.innerHeight);
-    windowScope.addEventListener("resize", () => {
+    windowScope.addEventListener('resize', () => {
       setHeight(windowScope.innerHeight);
     });
     return () => {
-      windowScope.removeEventListener("resize", () => {
+      windowScope.removeEventListener('resize', () => {
         setHeight(windowScope.innerHeight);
       });
     };
-  }, []);
+  }, [windowScope]);
 
   const { file } = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "rs-hero.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1300){
+          fluid(maxWidth: 1300) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -38,9 +38,9 @@ const Home = () => {
       <Text style={animations.verticleSlide(`15rem`, 0)}>
         <h1>Hey, my name’s Bill.</h1>
         <p>
-        I am a front-end developer with experience in creating static
-        and dynamic websites and web applications here in beautiful
-        Seattle, Washington.
+          I am a front-end developer with experience in creating static and
+          dynamic websites and web applications here in beautiful Seattle,
+          Washington.
         </p>
         <TextLink to="/about" text="More about me" />
         <TextLink to="/projects" text="My recent projects" />

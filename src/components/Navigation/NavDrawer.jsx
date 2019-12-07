@@ -1,60 +1,58 @@
-import React from "react";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
 import navArray from "../../shared/navigationArray";
-import styled from "styled-components";
-import colors from "../../shared/colors";
-import { Link } from "gatsby";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import breakpoints from "../../shared/breakpoints";
-import logo from "../../images/logo.svg";
-import { animated } from "react-spring";
+import colors from '../../shared/colors';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import breakpoints from '../../shared/breakpoints';
+import logo from '../../images/logo.svg';
+import { animated } from 'react-spring';
 
-const NavDrawer = ({ toggleNav, animation }) => {
-  return (
-    <Drawer
-      style={{
-        transform: animation.negative.interpolate(
-          y => `translate3d(0, -${y}vh, 0)`
-        ),
-      }}
-    >
-      <DrawerList>
-        <DrawerLink onClick={toggleNav}>
-          <Link activeClassName="active" to="/">
-            Home
+const NavDrawer = ({ toggleNav, animation }) => (
+  <Drawer
+    style={{
+      transform: animation.negative.interpolate(
+        y => `translate3d(0, -${y}vh, 0)`
+      ),
+    }}
+  >
+    <DrawerList>
+      <DrawerLink onClick={toggleNav}>
+        <Link activeClassName="active" to="/">
+          Home
+        </Link>
+      </DrawerLink>
+      {navArray.map((item, key) => (
+        <DrawerLink key={key} onClick={toggleNav}>
+          <Link activeClassName="active" to={item.to}>
+            {item.text}
           </Link>
         </DrawerLink>
-        {navArray.map((item, key) => (
-          <DrawerLink key={key} onClick={toggleNav}>
-            <Link activeClassName="active" to={item.to}>
-              {item.text}
-            </Link>
-          </DrawerLink>
-        ))}
-      </DrawerList>
-      <IconList>
-        <DrawerLink onClick={toggleNav}>
-          <a
-            href="https://github.com/bvasilop"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub />
-          </a>
-        </DrawerLink>
-        <DrawerLink onClick={toggleNav}>
-          <a
-            href="https://www.linkedin.com/in/bill-vasilopoulos/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedinIn />
-          </a>
-        </DrawerLink>
-      </IconList>
-      <Logo src={logo} alt="Bill Vasilopoulos - Logo" />
-    </Drawer>
-  );
-};
+      ))}
+    </DrawerList>
+    <IconList>
+      <DrawerLink onClick={toggleNav}>
+        <a
+          href="https://github.com/bvasilop"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </a>
+      </DrawerLink>
+      <DrawerLink onClick={toggleNav}>
+        <a
+          href="https://www.linkedin.com/in/bill-vasilopoulos/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedinIn />
+        </a>
+      </DrawerLink>
+    </IconList>
+    <Logo src={logo} alt="Bill Vasilopoulos - Logo" />
+  </Drawer>
+);
 
 const Drawer = styled(animated.div)`
   position: fixed;

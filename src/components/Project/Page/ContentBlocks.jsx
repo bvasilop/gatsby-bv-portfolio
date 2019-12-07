@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import Img from "gatsby-image";
+import React, { useState, useEffect } from 'react';
+import Img from 'gatsby-image';
+import { animated, useSpring, config } from 'react-spring';
+import { Waypoint } from 'react-waypoint';
 import {
   LeftContent,
   RightContent,
   MiddleContent,
   Text,
   Video,
-} from "./ContentBlockStyles";
-import { animated, useSpring, config } from "react-spring";
-import { Waypoint } from "react-waypoint";
+} from './ContentBlockStyles';
 
 const AnimatedImage = animated(Img);
 const AnimatedText = animated(Text);

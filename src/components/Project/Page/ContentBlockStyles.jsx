@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import breakpoints from "../../../shared/breakpoints";
-import colors from "../../../shared/colors";
-import { animated } from "react-spring";
+import React from 'react';
+import styled from 'styled-components';
+import { animated } from 'react-spring';
+import breakpoints from '../../../shared/breakpoints';
+import colors from '../../../shared/colors';
 
 const Content = styled.div`
   position: relative;
@@ -45,7 +45,7 @@ export const Text = styled.div`
   padding: 3rem;
   background-color: ${({ color }) => color};
   color: ${({ client }) =>
-    client === "MyEthvault" ? `#02394A` : colors.white};
+    client === 'MyEthvault' ? `#02394A` : colors.white};
   box-shadow: 0 0 5rem rgba(0, 0, 0, 0.25);
   width: calc(100% - 6rem);
 
@@ -59,13 +59,13 @@ export const Text = styled.div`
     max-width: 25%;
     bottom: calc(-100vh / 12);
     ${({ layout }) => {
-      if (layout === "left") {
+      if (layout === 'left') {
         return `right: calc(-100vh / 12);`;
       }
-      if (layout === "right") {
+      if (layout === 'right') {
         return `left: calc(-100vh / 12);`;
       }
-      if (layout === "middle") {
+      if (layout === 'middle') {
         return null;
       }
     }}
@@ -80,7 +80,7 @@ export const Video = ({ video, client, style }) => (
       src={`https://www.youtube.com/embed/${video}?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=${video}`}
       frameBorder="0"
       allowFullScreen=""
-    ></iframe>
+    />
   </Wrapper>
 );
 

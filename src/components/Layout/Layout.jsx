@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import styled, { createGlobalStyle } from "styled-components";
-import colors from "../../shared/colors";
-import "./styles/init.css";
-import "./styles/type.css";
-import Nav from "../Navigation/Nav";
-import NavDrawer from "../Navigation/NavDrawer";
-import { useSpring, animated, config } from "react-spring";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import styled, { createGlobalStyle } from 'styled-components';
+import { useSpring, animated, config } from 'react-spring';
+import colors from '../../shared/colors';
+import './styles/init.css';
+import './styles/type.css';
+import Nav from '../Navigation/Nav';
+import NavDrawer from '../Navigation/NavDrawer';
 
 const Layout = ({ children }) => {
   const [visible, setVisible] = useState(false);

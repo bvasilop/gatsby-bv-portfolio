@@ -1,33 +1,31 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import { animated } from 'react-spring';
+import Img from 'gatsby-image';
 import breakpoints from "../../../shared/breakpoints";
 import colors from "../../../shared/colors";
-import { animated } from "react-spring";
-import { animations } from "../../../shared/transitions";
-import Img from "gatsby-image";
+import { animations } from '../../../shared/transitions';
 
-const ProjectHero = ({ client, title, color, image }) => {
-  return (
-    <Hero
-      style={animations.horizontalSlide(`-15rem`, 0)}
-      color={color}
-      client={client}
-    >
-      <Image fluid={image} />
-      <Copy>
-        <p>{client}</p>
-        <h1>{title}</h1>
-      </Copy>
-    </Hero>
-  );
-};
+const ProjectHero = ({ client, title, color, image }) => (
+  <Hero
+    style={animations.horizontalSlide(`-15rem`, 0)}
+    color={color}
+    client={client}
+  >
+    <Image fluid={image} />
+    <Copy>
+      <p>{client}</p>
+      <h1>{title}</h1>
+    </Copy>
+  </Hero>
+);
 
 const Hero = styled(animated.header)`
   position: relative;
   grid-column: 1 / -1;
   background-color: ${({ color }) => color};
   color: ${({ client }) =>
-    client === "MyEthvault" ? `#02394A` : colors.white};
+    client === 'MyEthvault' ? `#02394A` : colors.white};
   height: 40vh;
 `;
 

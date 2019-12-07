@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import NavLink from "./NavLink";
-import logo from "../../images/favicon.jpg";
-import navArray from "../../shared/navigationArray";
-import { Link } from "gatsby";
-import { Container, Logo, LinkList, Bar, MenuButton } from "./NavStyles";
-import { FaGithub, FaLinkedinIn, FaBars, FaTimes } from "react-icons/fa";
-import NavLinkIcon from "./NavLinkIcon";
+import React, { useState } from 'react';
+import { Link } from 'gatsby';
+import { FaGithub, FaLinkedinIn, FaBars, FaTimes } from 'react-icons/fa';
+import NavLink from './NavLink';
+import logo from '../../images/favicon.jpg';
+import navArray from '../../shared/navigationArray';
+import { Container, Logo, LinkList, Bar, MenuButton } from './NavStyles';
+import NavLinkIcon from './NavLinkIcon';
 
 const Nav = ({ toggleNav, visible, animation }) => {
   // This state handles the position of the sliding bar.
