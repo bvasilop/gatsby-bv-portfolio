@@ -52,7 +52,7 @@ postLayout.propTypes = {
   content: PropTypes.string,
   featuredimage: PropTypes.string,
   frontmatter: PropTypes.string,
-  data: PropTypes.string,
+  data: PropTypes.object,
 };
 
 export const query = graphql`

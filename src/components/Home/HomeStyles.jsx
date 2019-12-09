@@ -31,9 +31,9 @@ export const Text = styled(animated.div)`
 
 export const Image = styled(animated.div)`
   position: fixed !important;
-  bottom: -100vh;
+  bottom: -75vh;
   right: 0;
-  width: 50%;
+  width: 20%;
   padding-top: 50%;
 
   .gatsby-image-wrapper {
@@ -45,7 +45,7 @@ export const Image = styled(animated.div)`
   }
 
   ${breakpoints.desktop} {
-    width: 30%;
+    width: 10%;
     margin-right: calc(12vh);
   }
 `;
