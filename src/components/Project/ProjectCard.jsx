@@ -39,6 +39,7 @@ const ProjectCard = ({ project, index }) => (
 
 ProjectCard.propTypes = {
   project: PropTypes.object.isRequired,
+  index: PropTypes.number,
 };
 
 export default ProjectCard;

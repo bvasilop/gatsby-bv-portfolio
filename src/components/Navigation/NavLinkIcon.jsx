@@ -18,6 +18,7 @@ const NavLinkIcon = ({ icon, to, mouseOver }) => {
 NavLinkIcon.propTypes = {
   to: PropTypes.string,
   mouseOver: PropTypes.func,
+  icon: PropTypes.object,
 };
 
 NavLinkIcon.defaultProps = {

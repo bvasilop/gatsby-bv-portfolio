@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 import { FaGithub, FaLinkedinIn, FaBars, FaTimes } from 'react-icons/fa';
 import NavLink from './NavLink';
 import logo from '../../images/favicon.jpg';
@@ -76,6 +77,12 @@ const Nav = ({ toggleNav, visible, animation }) => {
       </MenuButton>
     </Container>
   );
+};
+
+Nav.propTypes = {
+  toggleNav: PropTypes.func,
+  visible: PropTypes.bool,
+  animation: PropTypes.object,
 };
 
 export default Nav;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 import SEO from '../../Layout/SEO';
 import ProjectHero from './ProjectHero';
 import ProjectIntro from './ProjectIntro';
@@ -41,6 +42,17 @@ const postLayout = ({ data }) => {
       </ContactContainer>
     </>
   );
+};
+
+postLayout.propTypes = {
+  client: PropTypes.string,
+  title: PropTypes.string,
+  outline: PropTypes.string,
+  link: PropTypes.string,
+  content: PropTypes.string,
+  featuredimage: PropTypes.string,
+  frontmatter: PropTypes.string,
+  data: PropTypes.string,
 };
 
 export const query = graphql`

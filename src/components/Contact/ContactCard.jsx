@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FaLink } from 'react-icons/fa';
 import colors from '../../shared/colors';
@@ -12,7 +13,7 @@ const ContactCard = ({ title, copy, link }) => (
         View the project <FaLink />
       </a>
     ) : (
-      <a href="tel:773-571-3820">(773) 571-3820</a>
+      <a href="tel:(773) 571-3820">(773) 571-3820</a>
     )}
   </Card>
 );
@@ -35,5 +36,11 @@ const Card = styled.div`
     }
   }
 `;
+
+ContactCard.propTypes = {
+  title: PropTypes.string,
+  copy: PropTypes.string,
+  link: PropTypes.string,
+};
 
 export default ContactCard;

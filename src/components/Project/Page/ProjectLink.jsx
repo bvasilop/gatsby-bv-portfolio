@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ContentContainer } from '../../Common/Container';
 import colors from '../../../shared/colors';
@@ -12,6 +13,12 @@ const ProjectLink = ({ color, image, link }) => (
     </ExternalButton>
   </LinkContainer>
 );
+
+ProjectLink.propTypes = {
+  color: PropTypes.string,
+  image: PropTypes.string,
+  link: PropTypes.string,
+};
 
 const LinkContainer = styled(ContentContainer)`
   position: relative;
