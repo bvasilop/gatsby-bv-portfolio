@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { animated } from 'react-spring';
 import navArray from '../../shared/navigationArray';
@@ -53,6 +54,11 @@ const NavDrawer = ({ toggleNav, animation }) => (
     <Logo src={logo} alt="Bill Vasilopoulos - Logo" />
   </Drawer>
 );
+
+NavDrawer.propTypes = {
+  toggleNav: PropTypes.func,
+  animation: PropTypes.object,
+};
 
 const Drawer = styled(animated.div)`
   position: fixed;

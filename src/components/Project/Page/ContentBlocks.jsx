@@ -14,6 +14,7 @@ const AnimatedImage = animated(Img);
 const AnimatedText = animated(Text);
 
 export const LeftContentBlock = props => {
+  const { image, video, title, client, layout, color, copy } = props;
   const [view, setView] = useState(false);
   const [textView, setTextView] = useState(false);
 
@@ -29,7 +30,7 @@ export const LeftContentBlock = props => {
   return (
     <LeftContent>
       <Waypoint onEnter={() => setView(true)} />
-      {props.image ? (
+      {image ? (
         <AnimatedImage
           style={useSpring({
             opacity: view ? 1 : 0,
@@ -38,10 +39,10 @@ export const LeftContentBlock = props => {
               : `translate3d(-30rem, 0, 0)`,
             config: config.slow,
           })}
-          fluid={props.image.childImageSharp.fluid}
+          fluid={image.childImageSharp.fluid}
         />
       ) : null}
-      {props.video ? (
+      {video ? (
         <Video
           style={useSpring({
             opacity: view ? 1 : 0,
@@ -50,10 +51,10 @@ export const LeftContentBlock = props => {
               : `translate3d(-30rem, 0, 0)`,
             config: config.slow,
           })}
-          video={props.video}
+          video={video}
         />
       ) : null}
-      {props.title ? (
+      {title ? (
         <AnimatedText
           style={useSpring({
             opacity: textView ? 1 : 0,
@@ -62,13 +63,13 @@ export const LeftContentBlock = props => {
               : `translate3d(-30rem, 0, 0)`,
             config: config.slow,
           })}
-          client={props.client}
-          layout={props.layout}
-          color={props.color}
+          client={client}
+          layout={layout}
+          color={color}
         >
           <Waypoint onEnter={() => setTextView(true)} />
-          <h3>{props.title}</h3>
-          <p>{props.copy}</p>
+          <h3>{title}</h3>
+          <p>{copy}</p>
         </AnimatedText>
       ) : null}
     </LeftContent>
@@ -76,6 +77,7 @@ export const LeftContentBlock = props => {
 };
 
 export const RightContentBlock = props => {
+  const { image, video, title, client, layout, color, copy } = props;
   const [view, setView] = useState(false);
   const [textView, setTextView] = useState(false);
 
@@ -91,7 +93,7 @@ export const RightContentBlock = props => {
   return (
     <RightContent>
       <Waypoint onEnter={() => setView(true)} />
-      {props.image ? (
+      {image ? (
         <AnimatedImage
           style={useSpring({
             opacity: view ? 1 : 0,
@@ -100,10 +102,10 @@ export const RightContentBlock = props => {
               : `translate3d(30rem, 0, 0)`,
             config: config.slow,
           })}
-          fluid={props.image.childImageSharp.fluid}
+          fluid={image.childImageSharp.fluid}
         />
       ) : null}
-      {props.video ? (
+      {video ? (
         <Video
           style={useSpring({
             opacity: view ? 1 : 0,
@@ -112,10 +114,10 @@ export const RightContentBlock = props => {
               : `translate3d(30rem, 0, 0)`,
             config: config.slow,
           })}
-          video={props.video}
+          video={video}
         />
       ) : null}
-      {props.title ? (
+      {title ? (
         <AnimatedText
           style={useSpring({
             opacity: textView ? 1 : 0,
@@ -124,13 +126,13 @@ export const RightContentBlock = props => {
               : `translate3d(30rem, 0, 0)`,
             config: config.slow,
           })}
-          client={props.client}
-          layout={props.layout}
-          color={props.color}
+          client={client}
+          layout={layout}
+          color={color}
         >
           <Waypoint onEnter={() => setTextView(true)} />
-          <h3>{props.title}</h3>
-          <p>{props.copy}</p>
+          <h3>{title}</h3>
+          <p>{copy}</p>
         </AnimatedText>
       ) : null}
     </RightContent>
@@ -138,6 +140,7 @@ export const RightContentBlock = props => {
 };
 
 export const MiddleContentBlock = props => {
+  const { image, video, title, client, layout, color, copy } = props;
   const [view, setView] = useState(false);
   const [textView, setTextView] = useState(false);
 
@@ -153,7 +156,7 @@ export const MiddleContentBlock = props => {
   return (
     <MiddleContent>
       <Waypoint onEnter={() => setView(true)} />
-      {props.image ? (
+      {image ? (
         <AnimatedImage
           style={useSpring({
             opacity: view ? 1 : 0,
@@ -162,10 +165,10 @@ export const MiddleContentBlock = props => {
               : `translate3d(0, 30rem, 0)`,
             config: config.slow,
           })}
-          fluid={props.image.childImageSharp.fluid}
+          fluid={image.childImageSharp.fluid}
         />
       ) : null}
-      {props.video ? (
+      {video ? (
         <Video
           style={useSpring({
             opacity: view ? 1 : 0,
@@ -174,10 +177,10 @@ export const MiddleContentBlock = props => {
               : `translate3d(0, 30rem, 0)`,
             config: config.slow,
           })}
-          video={props.video}
+          video={video}
         />
       ) : null}
-      {props.title ? (
+      {title ? (
         <AnimatedText
           style={useSpring({
             opacity: textView ? 1 : 0,
@@ -186,13 +189,13 @@ export const MiddleContentBlock = props => {
               : `translate3d(0, 30rem, 0)`,
             config: config.slow,
           })}
-          client={props.client}
-          layout={props.layout}
-          color={props.color}
+          client={client}
+          layout={layout}
+          color={color}
         >
           <Waypoint onEnter={() => setTextView(true)} />
-          <h3>{props.title}</h3>
-          <p>{props.copy}</p>
+          <h3>{title}</h3>
+          <p>{copy}</p>
         </AnimatedText>
       ) : null}
     </MiddleContent>

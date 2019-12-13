@@ -1,31 +1,26 @@
 ---
 date: 2019-10-01T20:51:00.000Z
 client: Project 1
-title: Parametric search
+title: Title for first Project
 slug: /Panasonic-parametric-search
 link: >-
   https://www.billvas.com
 color: "#EF5F50"
 featuredimage: /img/parametric-cover-image.png
 outline: >-
-  Parametric searches are typically a mess of cluttered interface components and
-  unreadable data. I designed, user tested and prototyped a fully responsive
-  solution for Panasonic America that strips away the complexity and provides
-  users with an easy way to configure and refine the parameters of their search.
+  This is where I will describe the tools and processes used for the first Project.
 content:
-  - copy: An example of how cluttered parametric searches can be.
+  - copy: Description of first image used in project.
     image: /img/parametric-examples.jpg
     layout: left
-    title: Overcrowded
+    title: First Image Description
   - copy: >-
-      As we already had an established design system I iteratively prototyped my
-      ideas with wireframes to get faster feedback from users, the dev team and
-      the client.
+      Here we will discuss wireframe and schematics used in project.
     image: /img/parametric-wireframe.jpg
     layout: right
     title: Wireframing
   - copy: >-
-      Very few existing parametric searches are responsive. My solution works
+      I make it a point to create responsive and adaptive web applications. My solution works
       seamlessly across all devices.
     image: /img/parametric-ui.jpg
     layout: left
