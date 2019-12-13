@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Img from 'gatsby-image';
+import PropTypes from 'prop-types';
 import { animated, useSpring, config } from 'react-spring';
 import { Waypoint } from 'react-waypoint';
 import {
@@ -76,6 +77,16 @@ export const LeftContentBlock = props => {
   );
 };
 
+LeftContentBlock.propTypes = {
+  image: PropTypes.func,
+  video: PropTypes.object,
+  title: PropTypes.object,
+  client: PropTypes.object,
+  layout: PropTypes.object,
+  color: PropTypes.object,
+  copy: PropTypes.object,
+};
+
 export const RightContentBlock = props => {
   const { image, video, title, client, layout, color, copy } = props;
   const [view, setView] = useState(false);
@@ -139,6 +150,16 @@ export const RightContentBlock = props => {
   );
 };
 
+RightContentBlock.propTypes = {
+  image: PropTypes.func,
+  video: PropTypes.object,
+  title: PropTypes.object,
+  client: PropTypes.object,
+  layout: PropTypes.object,
+  color: PropTypes.object,
+  copy: PropTypes.object,
+};
+
 export const MiddleContentBlock = props => {
   const { image, video, title, client, layout, color, copy } = props;
   const [view, setView] = useState(false);
@@ -200,4 +221,14 @@ export const MiddleContentBlock = props => {
       ) : null}
     </MiddleContent>
   );
+};
+
+MiddleContentBlock.propTypes = {
+  image: PropTypes.func,
+  video: PropTypes.object,
+  title: PropTypes.object,
+  client: PropTypes.object,
+  layout: PropTypes.object,
+  color: PropTypes.object,
+  copy: PropTypes.object,
 };
