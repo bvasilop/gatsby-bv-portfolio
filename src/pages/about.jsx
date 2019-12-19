@@ -18,7 +18,8 @@ const About = () => (
         audiences.
         <br />
         <br />
-        Some more stuff here
+        I have included web applications and descriptive content for projects
+        included in this portfolio
         <br />
         <br />
         Some more stuff here fun!
